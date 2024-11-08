@@ -6,7 +6,7 @@ const TableProjectRow = ({ project, department, onEdit, onDelete, onDetail }) =>
     <tr>
         <TableCell>{project.id}</TableCell>
         <TableCell>{project.projName}</TableCell>
-        <TableCell>{department.deptName}</TableCell>
+        <TableCell>{department ? department.deptName : 'Not Available'}</TableCell>
         <TableCell>
             <Button onClick={onEdit} className="btn btn-primary" ariaLabel="Edit Project">
                 <Icon className="fas fa-pencil-alt" />

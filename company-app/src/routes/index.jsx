@@ -27,8 +27,8 @@ const AppRouter = () => {
     const getEmployeesFromLocalStorage = () => {
         const savedEmployees = localStorage.getItem('employees');
         return savedEmployees ? JSON.parse(savedEmployees) : [
-            { id: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac7', fName: "Kishimoto", lName: 'Masashi', dob: "1999-08-12", position: 'Staff', sex: "Male", deptNo: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac4', address: "Bandung" },
-            { id: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac6', fName: "Eiichiro", lName: 'Oda', dob: "1999-09-12", position: 'Staff', sex: "Male", deptNo: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac3', address: "Jakarta" },
+            { id: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac7', fName: "Kishimoto", lName: 'Masashi', dob: "1999-08-12", position: 'Manager', sex: "Male", deptNo: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac4', address: "Bandung" },
+            { id: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac6', fName: "Eiichiro", lName: 'Oda', dob: "1999-09-12", position: 'Manager', sex: "Male", deptNo: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac3', address: "Jakarta" },
             { id: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac5', fName: 'Akira', lName: 'Toriyama', dob: "1999-07-12", position: 'Manager', sex: "Male", deptNo: '2fa03f06-ec99-4419-a63b-7a9cb9ab5ac2', address: "Bogor" }
         ];
     };

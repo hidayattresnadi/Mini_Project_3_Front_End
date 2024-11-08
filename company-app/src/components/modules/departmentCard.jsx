@@ -8,7 +8,7 @@ const DepartmentDetailCard = ({ detailDepartment, manager }) => {
             <Container className="book-details">
                 <DepartmentDetail label="Id" value={detailDepartment.id} />
                 <DepartmentDetail label="Department Name" value={detailDepartment.deptName} />
-                <DepartmentDetail label="Manager Name" value={`${manager.fName} ${manager.lName}`} />
+                <DepartmentDetail label="Manager Name" value={manager ? `${manager.fName} ${manager.lName}` : 'Not Available'} />
             </Container>
         </>
 

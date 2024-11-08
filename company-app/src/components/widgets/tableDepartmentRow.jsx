@@ -6,7 +6,7 @@ const TableDepartmentRow = ({ department, onEdit, onDelete, onDetail, employee }
     <tr>
         <TableCell>{department.id}</TableCell>
         <TableCell>{department.deptName}</TableCell>
-        <TableCell>{`${employee.fName} ${employee.lName}`}</TableCell>
+        <TableCell>{employee ? `${employee?.fName} ${employee?.lName}`: 'Not Available'}</TableCell>
         <TableCell>
             <Button onClick={onEdit} className="btn btn-primary" ariaLabel="Edit Department">
                 <Icon className="fas fa-pencil-alt" />

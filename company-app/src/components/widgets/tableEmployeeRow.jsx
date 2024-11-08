@@ -8,7 +8,7 @@ const TableEmployeeRow = ({ employee, department, onEdit, onDelete, onDetail }) 
         <TableCell>{employee.fName}</TableCell>
         <TableCell>{employee.lName}</TableCell>
         <TableCell>{employee.position}</TableCell>
-        <TableCell>{department.deptName}</TableCell>
+        <TableCell>{department ? department.deptName :'Not Available'}</TableCell>
         <TableCell>
             <Button onClick={onEdit} className="btn btn-primary" ariaLabel="Edit Employee">
                 <Icon className="fas fa-pencil-alt" />

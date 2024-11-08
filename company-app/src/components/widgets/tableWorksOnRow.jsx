@@ -5,8 +5,8 @@ import Icon from '../elements/icon';
 const TableWorksOnRow = ({ worksOn,detailEmployee, detailProject, onEdit, onDelete, onDetail }) => (
     <tr>
         <TableCell>{worksOn.id}</TableCell>
-        <TableCell>{`${detailEmployee.fName} ${detailEmployee.lName}`}</TableCell>
-        <TableCell>{detailProject.projName}</TableCell>
+        <TableCell>{detailEmployee ? `${detailEmployee.fName} ${detailEmployee.lName}` : 'Not Available'}</TableCell>
+        <TableCell>{detailProject ? detailProject.projName : 'Not Available'}</TableCell>
         <TableCell>{worksOn.dateWorked}</TableCell>
         <TableCell>{worksOn.hoursWorked}</TableCell>
         <TableCell>

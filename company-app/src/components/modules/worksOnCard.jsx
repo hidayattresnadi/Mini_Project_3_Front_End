@@ -8,8 +8,8 @@ const WorksOnDetailCard = ({ detailWorksOn, detailEmployee, detailProject }) => 
             <Container className="book-details">
                 <WorksOnDetail label="Id" value={detailWorksOn.id} />
                 <WorksOnDetail label="Project Name" value={detailProject.projName} />
-                <WorksOnDetail label="Employee Name" value={`${detailEmployee.fName} ${detailEmployee.lName}`} />
-                <WorksOnDetail label="Date Worked" value={detailWorksOn.dateWorked} />
+                <WorksOnDetail label="Employee Name" value={detailEmployee ? `${detailEmployee.fName} ${detailEmployee.lName}` :'Not Available' } />
+                <WorksOnDetail label="Date Worked" value={detailWorksOn ? detailWorksOn.dateWorked : 'Not Available'} />
                 <WorksOnDetail label="Hours Worked" value={detailWorksOn.hoursWorked} />
             </Container>
         </>

@@ -8,7 +8,7 @@ const ProjectDetailCard = ({ detailProject, detailDepartment }) => {
             <Container className="book-details">
                 <ProjectDetail label="Id" value={detailProject.id} />
                 <ProjectDetail label="Project Name" value={detailProject.projName} />
-                <ProjectDetail label="Department" value={detailDepartment.deptName} />
+                <ProjectDetail label="Department" value={detailDepartment? detailDepartment.deptName: 'Not Available'} />
             </Container>
         </>
 

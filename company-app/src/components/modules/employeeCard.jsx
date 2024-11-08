@@ -12,7 +12,7 @@ const EmployeeDetailCard = ({ detailEmployee, department }) => {
                 <EmployeeDetail label="Date of Birth" value={detailEmployee.dob} />
                 <EmployeeDetail label="Sex" value={detailEmployee.sex} />
                 <EmployeeDetail label="Position" value={detailEmployee.position} />
-                <EmployeeDetail label="Department" value={department.deptName} />
+                <EmployeeDetail label="Department" value={department ? department.deptName : 'Not Available'} />
                 <EmployeeDetail label="Address" value={detailEmployee.address} />
             </Container>
         </>
